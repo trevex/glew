@@ -31,7 +31,7 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
     find_package(X11 REQUIRED)
 endif(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
 
-set(CMAKE_C_FLAGS "${CFLAGS} ${CMAKE_C_FLAGS} -DGLEW_BUILD -DGLEW_NO_GLU -O2 -Wall -W" )
+set(CMAKE_C_FLAGS "${CFLAGS} ${CMAKE_C_FLAGS} -DGLEW_BUILD -DGLEW_NO_GLU -O2 -Wall -W -fPIC" )
 
 include_directories( ${PROJECT_SOURCE_DIR}/include )
 
